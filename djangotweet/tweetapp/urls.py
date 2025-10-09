@@ -6,6 +6,9 @@ app_name= 'tweetapp'
 urlpatterns = [
     path('',views.listtweet,name='listtweet'), 
     #atil.com/tweetapp
-    path('addtweet/',views.addtweet,name='addtweet')
+    path('addtweet/',views.addtweet,name='addtweet'),
     #atil.com/tweetapp/addtweet
+    path('addtweetbyform',views.addtweetbyform,name='addtweetbyform'),
+    path('addtweetbymodelform',views.addtweetbymodelform,name='addtweetbymodelform'),
+
 ]
