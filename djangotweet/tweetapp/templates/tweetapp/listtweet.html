@@ -7,11 +7,15 @@
         <div class="card" style="padding: 10px;">
 
             <div class="card-header" style="background-color:goldenrod;">
-                <h4>{{tweet.nickname}}</h4>
+                <h4>{{tweet.username}}</h4>
             </div>
             <div class="card-body" style="background-color: burlywood;">
                 <p class="card-text">{{tweet.message}}</p>
             </div>
+
+            {%if tweet.username == user %}
+            <a href="{% url 'tweetapp:deletetweet' id=tweet.id %}" class="btn btn-danger">Delete</a>
+            {%endif%}
 
         </div>
     {%endfor%}
