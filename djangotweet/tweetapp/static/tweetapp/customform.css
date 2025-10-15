@@ -4,8 +4,27 @@
 }
 
 .tweetmessage{
-    border: 8px solid orange;
+    border: 8px solid skyblue;
     width: 200px;
     height: 100px;
     padding: 10px;
 }
+
+body {
+    background-color: #B3D9E6;
+}
+
+.navbar {
+    background-color: #6CA6CD !important;  
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: black !important; 
+}
+
